@@ -6,6 +6,7 @@ body {
 	padding: 0;
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
+	flex-wrap: wrap;
 }
 
 /* header*/
@@ -136,15 +137,15 @@ a:hover{
 
 .menu-itens {
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 45%;
+	left: 45%;
 	width: 100px;
 	height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	z-index: 2;
-	opacity: 0;
+	opacity: 1;
 	visibility: hidden;
 	transition: 400ms ease-in-out 0;
 }
@@ -193,12 +194,11 @@ a:hover{
 }
 
 #toggle:checked ~ .menu{
-	box-shadow: 0px 0px 0px 100vmax white;
+	box-shadow: 0px 0px 0px 50% white;
 	z-index: 1;
 }
 
 #toggle:checked ~ .menu-itens{
 	visibility: visible;
 	opacity: 1;
-	background: black;
 }
