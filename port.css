@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 
 body {
 	margin: 0;
@@ -13,7 +14,7 @@ body {
 
 .header-wrapper {
 	height: 100vh;
-	width: 100%;
+	width: 100vmax;
 	background: linear-gradient(-45deg, #051F1E, #072D30, #155D6B, #0F5066, #158AC9);
 	background-size: 400% 400%;
 	display: flex;
@@ -199,7 +200,7 @@ a:hover{
 .cointainer {
 	width: 100%;
 	height: auto;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -234,9 +235,10 @@ a:hover{
 
 .card-text {
 	width: 40%;
-	font-family: sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	letter-spacing: 1px;
 	color: rgb(15, 80, 102);
+	text-align: justify;
 }
 
 .card-wrapper {
@@ -287,12 +289,12 @@ a:hover{
 	height: 250px;
 }
 
+
 footer.rodape {
+	display: block;
 	clear: both;
 	border-top: 1px solid #606060;
-	width: 1473px;
 	text-align: center;
-	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	color: white;
