@@ -8,6 +8,7 @@ body {
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
 	flex-wrap: wrap;
+	overflow-x: hidden;
 }
 
 /* header*/
@@ -162,7 +163,6 @@ a:hover{
 }
 
 /* Animação do menu*/
-
 #toggle:checked + .checkbox .trace:nth-child(3) {
 	transform: rotate(-45deg);
 	background-color: black;
@@ -189,10 +189,12 @@ a:hover{
 #toggle:checked ~ .menu-itens{
 	visibility: visible;
 	opacity: 1;
+
 }
 
 #toggle:checked ~ .menu{
 	box-shadow: 0px 0px 0px 100vmax #ffffff;
+	z-index: 99999;
 }
 
 /* CARDS */
@@ -205,11 +207,13 @@ a:hover{
 	justify-content: space-between;
 	align-items: center;
 	margin: 3ren 0;
+	position: absolute;
+	background-color: #ffffff;
 }
 
 .card-container {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-evenly;
 	width: 100%;
 }
@@ -231,7 +235,9 @@ a:hover{
 	color: white;
 	cursor: pointer;
 	transition: 0.3s;
+	top: 100px;
 }
+
 
 .card-text {
 	width: 40%;
@@ -283,11 +289,13 @@ a:hover{
 	filter: unset;
 }
 
+
 .card:hover > .card-wrapper::before {
 	opacity: 1;
 	width: 350px;
 	height: 250px;
 }
+
 
 
 footer.rodape {
@@ -300,6 +308,7 @@ footer.rodape {
 	color: white;
 	padding: 30px;
 	background-color: #0F5066;
+	width: 100%;
 }
 
 footer.rodape h1 {
