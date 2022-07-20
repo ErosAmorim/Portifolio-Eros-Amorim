@@ -245,6 +245,8 @@ a:hover{
 	letter-spacing: 1px;
 	color: rgb(15, 80, 102);
 	text-align: justify;
+	align-items: center;
+	padding: 70px;
 }
 
 .card-wrapper {
